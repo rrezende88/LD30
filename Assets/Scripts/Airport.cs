@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Airport : MonoBehaviour {
 
 	public int Id { get; set; }
 	
-	public IList<Plane> PlaneList { get; set; }
+	public List<Plane> PlaneList { get; set; }
 	
-	public IDictionary<Airport,int> AirportPassengerCountDictionary { get; set; } 
+	public Dictionary<Airport,int> AirportPassengerCountDictionary { get; set; } 
 	
 	public Vector2 Position { get; set; }
 	
